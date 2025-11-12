@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe6e6, #ffd6d6, #fff);
+    font-family: 'Cambria', serif;
+    color: rgb(121, 56, 44);
+    margin: 0;
+}
+
+.mensaje {
+    animation: parpadeo 1.2s infinite alternate;
+    font-size: 1.8rem;
+}
+
+@keyframes parpadeo {
+    from { opacity: 0.5; transform: scale(1); }
+    to { opacity: 1; transform: scale(1.05); }
+}
